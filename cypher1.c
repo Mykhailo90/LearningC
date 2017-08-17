@@ -1,17 +1,15 @@
 // cypher1.c -- programm change simbols besides space
 
 #include<stdio.h>
-#define SPACE ' '
+#include<ctype.h>
 int main(void){
   printf("Programm change your entered symbols.\n");
   char ch;
-  ch = getchar();
-  while (ch != '\n') {
-    if(ch == SPACE)
-       putchar(ch);
-    else
+  while ((ch = getchar()) != '\n') {
+    if(isalpha(ch))
        putchar(ch + 1);
-    ch = getchar();
+    else
+       putchar(ch);  
   }
   putchar(ch);
   return 0;
