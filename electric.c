@@ -1,11 +1,11 @@
 // electric.c -- programm counted taxe for electicity
 
 #include<stdio.h>
-#define RATE1 0.13230 //taxe for first 360kVT
-#define RATE2 0.15040 //taxe for next 108kVT
-#define RATE3 0.30025 //taxe for next 252kVT
-#define RATE4 0.34025 //taxe for more then 720kVT
-#define BREAK1 360.0 // change taxe point
+#define RATE1 0.13230 //taxes for first 360kwh
+#define RATE2 0.15040 //taxes for next 108kwh
+#define RATE3 0.30025 //taxes for next 252kwh
+#define RATE4 0.34025 //taxes for more then 720kwh
+#define BREAK1 360.0 // change taxes point
 #define BREAK2 468.0
 #define BREAK3 720.0
 #define BASE1 (RATE1 * BREAK1) //price for first part
